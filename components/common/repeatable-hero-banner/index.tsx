@@ -56,7 +56,6 @@ const RepeatableHeroBanner = ({
                   description={hb.content && hb.content.description}
                   title={hb.content && hb.content.title}
                   videoUrl={hb.video_url}
-                  action={hb.action}
                   changeVideoState={changeVideoState}
                 />
               </StyledSlide>

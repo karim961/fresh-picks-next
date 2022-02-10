@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Container } from '../styles';
-import { H3 } from '../../../styles/text';
+import { H3 } from '../../../../styles/text';
 
 export const SimpleBannerContainer = styled(Container)`
   max-height: 575px;

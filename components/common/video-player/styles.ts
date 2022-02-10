@@ -32,7 +32,7 @@ const closeButtonDisplay = css`
   width: 100%;
   top: 50%;
   left: 0;
-  background: ${(props) => props.theme.white};
+  background: ${(props) => props.theme.colors.white};
   border-radius: 5px;
   margin-top: -6px;
 `;

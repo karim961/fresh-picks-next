@@ -7,12 +7,12 @@ export const StyledErrorContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: ${(props) => props.theme.fontRegular};
+  font-family: ${(props) => props.theme.fonts.Lato};
 `;
 
 export const ErrorTitle = styled.h1`
   font-size: 3em;
-  color: ${(props) => props.theme.slateGrey};
+  color: ${(props) => props.theme.colors.primaryText};
   margin: 0;
 `;
 

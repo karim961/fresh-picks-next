@@ -9,6 +9,7 @@ import InfoBlock from './info-block';
 import { TEXT } from '../../../config/strings';
 import Link from 'next/link';
 import ROUTES from '../../../config/routes';
+import { MENU } from '../../../config/menu';
 
 const Header = ({
   logo,
@@ -47,19 +48,7 @@ const Header = ({
               url={`tel:${phoneNumber}`}
             />
           </AddressContainer>
-          <NavBar
-            dropDownContent={[
-              { label: 'test', url: '/' },
-              {
-                label: 'test',
-                items: [
-                  { label: 'test1', url: 'https://www.google.com.lb/' },
-                  { label: 'test1', url: 'https://www.google.com.lb/' },
-                  { label: 'test1', url: 'https://www.google.com.lb/' },
-                ],
-              },
-            ]}
-          />
+          <NavBar dropDownContent={MENU} />
         </RightCol>
       </Row>
     </Grid>
