@@ -2,9 +2,9 @@ import { ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import Header from '../header';
 import { ReactElement } from 'react';
-import theme from '../../styles/theme';
-import { PageWrapperProps } from '../../models/page-wrapper';
-import { Wrapper } from '../../styles/styles';
+import theme from '../../../styles/theme';
+import { PageWrapperProps } from '../../../models/page-wrapper';
+import { Wrapper } from '../../../styles/styles';
 
 const PageWrapper = ({
   pageWrapperData,

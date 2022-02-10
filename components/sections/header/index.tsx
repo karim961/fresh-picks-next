@@ -1,12 +1,14 @@
 import { Col, Grid, Row } from 'react-styled-flexboxgrid';
 import { AddressContainer, HeaderContainer, Logo, RightCol } from './styles';
 
-import NavBar from '../nav-bar';
+import NavBar from '../../nav-bar';
 import { ReactElement } from 'react';
-import { HeaderProps } from '../../models/page-wrapper';
-import { getMediaUrl } from '../../api/cms';
+import { HeaderProps } from '../../../models/page-wrapper';
+import { getMediaUrl } from '../../../api/cms';
 import InfoBlock from './info-block';
-import { TEXT } from '../../config/strings';
+import { TEXT } from '../../../config/strings';
+import Link from 'next/link';
+import ROUTES from '../../../config/routes';
 
 const Header = ({
   logo,
@@ -18,7 +20,11 @@ const Header = ({
     <Grid>
       <Row center={'xs'} top={'md'}>
         <Col lg={3} md={2} xs={4}>
-          <Logo src={getMediaUrl(logo.url)} alt={'logo'} />
+          <Link href={ROUTES.INDEX}>
+            <a>
+              <Logo src={getMediaUrl(logo.url)} alt={'logo'} />
+            </a>
+          </Link>
         </Col>
 
         <RightCol lg={9} md={10} sm={8} xs={8}>

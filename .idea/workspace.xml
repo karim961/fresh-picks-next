@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a125ecc-1f84-4fa3-adff-3b7b9926f0d1" name="Changes" comment="" />
+    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="feat: shitload of features :D">
+      <change afterPath="$PROJECT_DIR$/config/menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/drop-down/nested/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/drop-down/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/error/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/error/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header-description/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header-description/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header-description/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/info-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/header/info-block.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hero-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hero-banner/simple-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/simple-banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hero-banner/simple-banner/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/simple-banner/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/hero-banner/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/info-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/info-banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/info-banner/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/nav-bar/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/page-wrapper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/page-wrapper/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/repeatable-hero-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/repeatable-hero-banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/repeatable-hero-banner/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/video-player/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/video-player/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/video-player/play-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/video-player/play-button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/video-player/play-button/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/video-player/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/device.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/globals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="24nmZVWyNMv2g3SDM5D2mY7icTJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="24pWRkm9tiCb8kYEmXPI0zk5aL1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="D:\Projects\WebstormProjects\fresh-pick\frontend\node_modules\eslint" />
@@ -29,25 +85,45 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Projects\WebstormProjects\fresh-pick\frontend\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="D:\Projects\WebstormProjects\fresh-pick\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\utils" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components" />
       <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\config" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\common" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\sections" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a125ecc-1f84-4fa3-adff-3b7b9926f0d1" name="Changes" comment="" />
-      <created>1644274782504</created>
+      <changelist id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="" />
+      <created>1644328003508</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1644274782504</updated>
-      <workItem from="1644274783917" duration="1392000" />
-      <workItem from="1644276190789" duration="2037000" />
+      <updated>1644328003508</updated>
+      <workItem from="1644328005085" duration="11294000" />
+      <workItem from="1644355678441" duration="2947000" />
+      <workItem from="1644407738090" duration="23967000" />
+      <workItem from="1644487514713" duration="5949000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: shitload of features :D">
+      <created>1644451813351</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644451813351</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,10 +134,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: shitload of features :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: shitload of features :D" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

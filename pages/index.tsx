@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { getSingleTypes } from '../api/cms';
 import type { PageStaticProps, StaticProps } from '../models/static-props';
-import PageWrapper from '../components/page-wrapper';
+import PageWrapper from '../components/sections/page-wrapper';
 import { getPageWrapper } from '../lib/page-wrapper-handler';
-import ErrorPage from '../components/error';
-import RepeatableHeroBanner from '../components/repeatable-hero-banner';
+import ErrorPage from '../components/sections/error';
+import RepeatableHeroBanner from '../components/common/repeatable-hero-banner';
 
 export default function Page({ pageData, pageWrapper }: StaticProps) {
   return pageData || pageWrapper ? (

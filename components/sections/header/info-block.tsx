@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { IconWrapper, InfoContainer, InfoDetails } from './styles';
-import { H5 } from '../../styles/text';
+import { H5 } from '../../../styles/text';
 
 interface InfoBlockProps {
   icon: string;

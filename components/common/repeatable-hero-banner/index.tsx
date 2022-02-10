@@ -3,16 +3,15 @@ import { ReactElement, useState } from 'react';
 import { CarouselProvider, Slider } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import VideoPlayer from '../video-player';
-import { getYoutubeVideoId } from '../../utils/videos';
+import { getYoutubeVideoId } from '../../../utils/videos';
 import {
   StyledButtonBack,
   StyledButtonNext,
   StyledRepeatableHeroBanner,
   StyledSlide,
 } from './styles';
-// eslint-disable-next-line import/no-cycle
 import HeroBanner from '../hero-banner';
-import { getMediaUrl } from '../../api/cms';
+import { getMediaUrl } from '../../../api/cms';
 
 export type RepeatableHeroBannerProps = {
   hero_banner: Array<any>;
@@ -66,8 +65,12 @@ const RepeatableHeroBanner = ({
         </Slider>
         {hero_banner.length > 1 && (
           <>
-            <StyledButtonBack />
-            <StyledButtonNext />
+            <StyledButtonBack>
+              <></>
+            </StyledButtonBack>
+            <StyledButtonNext>
+              <></>
+            </StyledButtonNext>
           </>
         )}
       </CarouselProvider>

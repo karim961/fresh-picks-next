@@ -1,7 +1,7 @@
 import { Col, Row, Grid } from 'react-styled-flexboxgrid';
 import { InfoBannerContainer } from './styles';
-import { switchComponent } from '../../utils/strapi';
-import { ColText } from '../../styles/container';
+import { switchComponent } from '../../../utils/strapi';
+import { ColText } from '../../../styles/container';
 import { ReactElement } from 'react';
 
 interface InfoBannerProps {

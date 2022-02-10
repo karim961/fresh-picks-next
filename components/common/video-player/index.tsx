@@ -6,7 +6,7 @@ import {
   VideoPlayerPopup,
   YoutubeIframe,
 } from './styles';
-import { useOnClickOutside } from '../../utils/hooks';
+import { useOnClickOutside } from '../../../utils/hooks';
 
 export type VideoProps = {
   videoId: string;
