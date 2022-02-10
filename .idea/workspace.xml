@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="feat: restructuring the project">
+    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="chore: ts errors">
+      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +84,7 @@
       <workItem from="1644328005085" duration="11294000" />
       <workItem from="1644355678441" duration="2947000" />
       <workItem from="1644407738090" duration="23967000" />
-      <workItem from="1644487514713" duration="6326000" />
+      <workItem from="1644487514713" duration="7634000" />
     </task>
     <task id="LOCAL-00001" summary="feat: shitload of features :D">
       <created>1644451813351</created>
@@ -99,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644511782577</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: restructuring the project">
+      <created>1644511980434</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644511980434</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: ts errors">
+      <created>1644512473692</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644512473692</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +147,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: shitload of features :D" />
     <MESSAGE value="feat: restructuring the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: restructuring the project" />
+    <MESSAGE value="chore: ts errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: ts errors" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
