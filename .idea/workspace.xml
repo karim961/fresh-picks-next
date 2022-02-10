@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="feat: shitload of features :D">
-      <change afterPath="$PROJECT_DIR$/config/menu.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="feat: restructuring the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/drop-down/nested/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/drop-down/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/error/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/error/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/footer/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header-description/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header-description/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header-description/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/info-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/header/info-block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hero-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hero-banner/simple-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/simple-banner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hero-banner/simple-banner/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/simple-banner/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hero-banner/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/hero-banner/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/info-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/info-banner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/info-banner/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/nav-bar/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/page-wrapper/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/page-wrapper/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/repeatable-hero-banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/repeatable-hero-banner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/repeatable-hero-banner/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/video-player/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/video-player/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/video-player/play-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/video-player/play-button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/video-player/play-button/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/video-player/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/device.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/globals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +83,7 @@
       <workItem from="1644328005085" duration="11294000" />
       <workItem from="1644355678441" duration="2947000" />
       <workItem from="1644407738090" duration="23967000" />
-      <workItem from="1644487514713" duration="5949000" />
+      <workItem from="1644487514713" duration="6326000" />
     </task>
     <task id="LOCAL-00001" summary="feat: shitload of features :D">
       <created>1644451813351</created>
@@ -123,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644451813351</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: restructuring the project">
+      <created>1644511782577</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644511782577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: shitload of features :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: shitload of features :D" />
+    <MESSAGE value="feat: restructuring the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: restructuring the project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
