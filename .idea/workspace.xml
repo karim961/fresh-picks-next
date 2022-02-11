@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="chore: ts errors">
+    <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="feat: add home page sections wip">
+      <change afterPath="$PROJECT_DIR$/components/common/button/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/button/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/category-card/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/category-card/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sections/categories-block/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sections/categories-block/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sections/story-block/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/sections/story-block/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.uat" beforeDir="false" afterPath="$PROJECT_DIR$/.env.uat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/header-description/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header-description/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sections/error/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/error/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sections/header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/header/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/globals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/globals.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/text.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/text.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/strapi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/utils/strapi.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -47,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/sections/story-block" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="D:\Projects\WebstormProjects\fresh-pick\frontend\node_modules\eslint" />
@@ -56,21 +77,21 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Projects\WebstormProjects\fresh-pick\frontend\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Projects\WebstormProjects\fresh-pick\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\sections\story-block" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\common" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\common\category-card" />
       <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\utils" />
       <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components" />
-      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend" />
-      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\config" />
-      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\common" />
       <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\sections" />
+      <recent name="D:\Projects\WebstormProjects\fresh-pick\frontend\components\common" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +105,7 @@
       <workItem from="1644328005085" duration="11294000" />
       <workItem from="1644355678441" duration="2947000" />
       <workItem from="1644407738090" duration="23967000" />
-      <workItem from="1644487514713" duration="7634000" />
+      <workItem from="1644487514713" duration="23185000" />
     </task>
     <task id="LOCAL-00001" summary="feat: shitload of features :D">
       <created>1644451813351</created>
@@ -114,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644512473692</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore: ts errors">
+      <created>1644513289448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644513289448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +176,8 @@
     <MESSAGE value="feat: shitload of features :D" />
     <MESSAGE value="feat: restructuring the project" />
     <MESSAGE value="chore: ts errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: ts errors" />
+    <MESSAGE value="feat: add home page sections wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add home page sections wip" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

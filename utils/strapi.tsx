@@ -1,10 +1,6 @@
 /* eslint-disable import/no-cycle */
 import React, { ReactElement } from 'react';
 
-import globals from '../config/globals';
-
-const { HERO_BANNER } = globals.CMS_COMPONENTS;
-
 export const getLink = ({ url, page }: { [key: string]: any }): string => {
   return (page ? page.link : url) || '#';
 };
@@ -26,8 +22,8 @@ export const switchComponent = (
   params: Object,
 ): ReactElement<any> => {
   switch (key) {
-    case HERO_BANNER:
-      return <>test</>;
+    // case HERO_BANNER:
+    //   return <>test</>;
 
     default:
       return <></>;

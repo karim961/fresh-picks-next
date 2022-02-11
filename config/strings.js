@@ -15,6 +15,7 @@ const TEXT = {
   EMAIL_TITLE: 'Email Address',
   PHONE_TITLE: 'Get In Touch',
   ADDRESS: 'Example, Address',
+  READ_MORE: 'Read more',
 };
 
 export { URLS, HEADERS, TEXT };

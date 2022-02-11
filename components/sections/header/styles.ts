@@ -37,7 +37,7 @@ export const IconWrapper = styled.span`
   margin-right: 11px;
   border-radius: 7px;
   text-align: center;
-  border: 1px solid ${(props) => props.theme.colors.lightGrey};
+  border: 1px solid ${(props) => props.theme.colors.grey};
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@ export const AddressContainer = styled.div`
   justify-content: flex-end;
   flex-wrap: wrap;
   & ${InfoContainer}:not(:last-child) {
-    border-right: 1px solid ${(props) => props.theme.colors.lightGrey};
+    border-right: 1px solid ${(props) => props.theme.colors.grey};
   }
 
   & a,

@@ -18,6 +18,6 @@ export const ErrorTitle = styled.h1`
 
 export const ErrorDescription = styled.h3`
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
 `;

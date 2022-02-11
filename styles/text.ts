@@ -18,7 +18,7 @@ export const H3 = styled.h3`
   font-weight: normal;
 `;
 
-export const H4 = styled.h5`
+export const H4 = styled.h4`
   color: ${(props) => props.theme.colors.primaryText};
   font-size: ${(props) => props.theme.fontSizes.h4}rem;
   font-weight: 700;
@@ -32,13 +32,14 @@ export const H5 = styled.h5`
 export const H6 = styled.h6`
   color: ${(props) => props.theme.colors.primaryText};
   font-size: ${(props) => props.theme.fontSizes.h6}rem;
-  font-weight: normal;
+  line-height: 1.2;
+  font-weight: bold;
 `;
 
 export const Description = styled.p`
   color: ${(props) => props.theme.colors.primaryText};
   font-size: ${(props) => props.theme.fontSizes.regular}rem;
-  font-weight: normal;
+  font-weight: 300;
 `;
 
 export const Caption = styled.span`
