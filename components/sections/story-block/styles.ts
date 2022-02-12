@@ -5,7 +5,8 @@ import { Col } from 'react-styled-flexboxgrid';
 export const Container = styled.div`
   width: 100%;
   padding: 125px 0;
-  background: ${(props) => props.theme.colors.white}; ;
+  background-color: ${(props) => props.theme.colors.white};
+  background-size: cover;
 `;
 export const ImageWrapper = styled.div<{
   accentColor: string;
@@ -14,7 +15,7 @@ export const ImageWrapper = styled.div<{
   margin-left: 40px;
   position: relative;
   z-index: 0;
-  &:after {
+  &::after {
     content: '';
     display: block;
     position: absolute;

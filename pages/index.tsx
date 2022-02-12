@@ -33,7 +33,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
               <StoryBlock
                 style={
                   pageData.our_story.background && {
-                    background: `url(${getMediaUrl(
+                    backgroundImage: `url(${getMediaUrl(
                       pageData.our_story.background.url,
                     )})`,
                   }
@@ -53,7 +53,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
               <StoryBlock
                 style={
                   pageData.our_mission.background && {
-                    background: `url(${getMediaUrl(
+                    backgroundImage: `url(${getMediaUrl(
                       pageData.our_mission.background.url,
                     )})`,
                   }

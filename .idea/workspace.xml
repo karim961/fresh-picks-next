@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed4cdd8e-d95a-43d2-b58c-85de2583d76b" name="Changes" comment="feat: add home page sections wip">
-      <change afterPath="$PROJECT_DIR$/components/common/button/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/common/button/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/common/category-card/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/common/category-card/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/sections/categories-block/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/sections/categories-block/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/sections/story-block/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/sections/story-block/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.uat" beforeDir="false" afterPath="$PROJECT_DIR$/.env.uat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/common/header-description/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/header-description/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/sections/error/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/error/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/sections/header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/header/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/globals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/globals.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/strings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sections/story-block/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/story-block/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sections/story-block/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/sections/story-block/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/text.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/text.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/strapi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/utils/strapi.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +86,8 @@
       <workItem from="1644328005085" duration="11294000" />
       <workItem from="1644355678441" duration="2947000" />
       <workItem from="1644407738090" duration="23967000" />
-      <workItem from="1644487514713" duration="23185000" />
+      <workItem from="1644487514713" duration="23611000" />
+      <workItem from="1644589848776" duration="1060000" />
     </task>
     <task id="LOCAL-00001" summary="feat: shitload of features :D">
       <created>1644451813351</created>
@@ -142,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644513289448</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add home page sections wip">
+      <created>1644543239058</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644543239058</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

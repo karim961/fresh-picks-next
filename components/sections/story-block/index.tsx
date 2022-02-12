@@ -33,7 +33,7 @@ const StoryBlock = ({
               <StoryImage src={imageUrl} alt={title} />
             </ImageWrapper>
           </Col>
-          <TextCol lg={6} md={6}>
+          <TextCol lg={6} md={6} xs={12}>
             <H2>{title}</H2>
             <H6>{subtitle}</H6>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{text}</ReactMarkdown>
