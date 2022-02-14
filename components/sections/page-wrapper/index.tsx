@@ -5,6 +5,7 @@ import { ReactElement } from 'react';
 import theme from '../../../styles/theme';
 import { PageWrapperProps } from '../../../models/page-wrapper';
 import { Wrapper } from '../../../styles/styles';
+import Footer from '../footer';
 
 const PageWrapper = ({
   pageWrapperData,
@@ -53,14 +54,13 @@ const PageWrapper = ({
               />
             )}
             {children}
-            {/*{pageWrapperData.footer && (*/}
-            {/*  // <Footer*/}
-            {/*  //*/}
-            {/*  //   leftContent={pageWrapperData.footer.leftContent}*/}
-            {/*  //   rightContent={pageWrapperData.footer.rightContent}*/}
-            {/*  //   topContent={pageWrapperData.footer.topContent}*/}
-            {/*  // />*/}
-            {/*)}*/}
+            {pageWrapperData.footer && (
+              <Footer
+                title={pageWrapperData.footer.title}
+                description={pageWrapperData.footer.description}
+                social_links={pageWrapperData.footer.social_links}
+              />
+            )}
           </Wrapper>
         </ThemeProvider>
       }

@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
   padding: 30px 20px;
   text-align: center;
   transition: 0.3s;
+  margin-bottom: 30px;
 
   & h4 {
     padding-bottom: 10px;

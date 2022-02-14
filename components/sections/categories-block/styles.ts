@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { H1 } from '../../../styles/text';
 import { StyledHeaderDescription } from '../../common/header-description/styles';
+import { SectionContainer } from '../../../styles/styles';
 
-export const CategoriesBlockContainer = styled.div`
-  padding: 125px 0;
+export const CategoriesBlockContainer = styled(SectionContainer)`
   background: ${(props) => props.theme.colors.white};
   & ${StyledHeaderDescription} {
     text-align: center;

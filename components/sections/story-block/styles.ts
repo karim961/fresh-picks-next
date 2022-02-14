@@ -1,10 +1,9 @@
 import styled, { css } from 'styled-components';
 
 import { Col } from 'react-styled-flexboxgrid';
+import { SectionContainer } from '../../../styles/styles';
 
-export const Container = styled.div`
-  width: 100%;
-  padding: 125px 0;
+export const Container = styled(SectionContainer)`
   background-color: ${(props) => props.theme.colors.white};
   background-size: cover;
 `;
@@ -12,7 +11,15 @@ export const ImageWrapper = styled.div<{
   accentColor: string;
   reverse?: boolean;
 }>`
-  margin-left: 40px;
+  ${(props) =>
+    props.reverse
+      ? css`
+          margin-right: 40px;
+        `
+      : css`
+          margin-left: 40px;
+        `};
+  margin-bottom: 30px;
   position: relative;
   z-index: 0;
   &::after {

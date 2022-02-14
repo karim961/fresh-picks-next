@@ -8,6 +8,7 @@ import RepeatableHeroBanner from '../components/common/repeatable-hero-banner';
 import CategoriesBlock from '../components/sections/categories-block';
 import StoryBlock from '../components/sections/story-block';
 import theme from '../styles/theme';
+import GetInTouch from '../components/sections/get-in-touch';
 
 export default function Page({ pageData, pageWrapper }: StaticProps) {
   return pageData || pageWrapper ? (
@@ -69,6 +70,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 accentColor={theme.colors.secondary}
               />
             )}
+            <GetInTouch />
           </>
         )}
       </PageWrapper>

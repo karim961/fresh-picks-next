@@ -5,9 +5,19 @@ export interface HeaderProps {
   phoneNumber: string;
 }
 
+export interface FooterProps {
+  title: string;
+  description: string;
+  social_links: Array<{
+    _id: string;
+    icon: string;
+    url: string;
+  }>;
+}
+
 export interface PageWrapperData {
   header?: HeaderProps;
-  footer?: HeaderProps;
+  footer?: FooterProps;
 }
 
 export interface PageWrapperProps {

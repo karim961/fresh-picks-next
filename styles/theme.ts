@@ -1,46 +1,5 @@
 import 'styled-components';
 
-declare module 'styled-components' {
-  export interface DefaultTheme {
-    colors: {
-      [key: string]: string;
-    };
-
-    fontSizes: {
-      regular: number;
-      caption: number;
-      h1: number;
-      h2: number;
-      h3: number;
-      h4: number;
-      h5: number;
-      h6: number;
-    };
-
-    fonts: { [key: string]: string };
-
-    // Grid Theme
-    flexboxgrid: {
-      // Defaults
-      gridSize: number; // columns
-      gutterWidth: number; // rem
-      outerMargin: number; // rem
-      mediaQuery: string;
-      container: {
-        sm: number; // rem
-        md: number; // rem
-        lg: number; // rem
-      };
-      breakpoints: {
-        xs: number; // em
-        sm: number; // em
-        md: number; // em
-        lg: number; // em
-      };
-    };
-  }
-}
-
 const theme = {
   colors: {
     // #C73E1D
@@ -52,7 +11,7 @@ const theme = {
     secondary: '#A8C256',
     white: '#fcfaf9',
     snow: '#fff',
-    grey: '#dedddb',
+    grey: '#CFCBCA',
     lightGrey: '#f4f8ff',
 
     white25: 'rgba(255, 255, 255, 0.25)',
@@ -95,5 +54,46 @@ const theme = {
     },
   },
 };
+
+declare module 'styled-components' {
+  export interface DefaultTheme {
+    colors: {
+      [key: string]: string;
+    };
+
+    fontSizes: {
+      regular: number;
+      caption: number;
+      h1: number;
+      h2: number;
+      h3: number;
+      h4: number;
+      h5: number;
+      h6: number;
+    };
+
+    fonts: { [key: string]: string };
+
+    // Grid Theme
+    flexboxgrid: {
+      // Defaults
+      gridSize: number; // columns
+      gutterWidth: number; // rem
+      outerMargin: number; // rem
+      mediaQuery: string;
+      container: {
+        sm: number; // rem
+        md: number; // rem
+        lg: number; // rem
+      };
+      breakpoints: {
+        xs: number; // em
+        sm: number; // em
+        md: number; // em
+        lg: number; // em
+      };
+    };
+  }
+}
 
 export default theme;

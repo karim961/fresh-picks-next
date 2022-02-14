@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid } from 'react-styled-flexboxgrid';
+import { Col } from 'react-styled-flexboxgrid';
 
 export const Wrapper = styled.div`
   background: ${(props) => props.theme.colors.white};
@@ -8,14 +8,11 @@ export const Wrapper = styled.div`
   color: ${(props) => props.theme.colors.primaryText};
 `;
 
-export const Container = styled(Grid)`
-  box-sizing: border-box;
-  background: ${(props) => props.theme.colors.white25};
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+export const SectionContainer = styled.section`
+  width: 100%;
+  padding: 125px 0;
+  //padding-bottom: 100px;
+  //padding-top: 120px;
 `;
 
 export const Icon = styled.i`
@@ -34,4 +31,7 @@ export const Card = styled.div`
   box-shadow: 0 3px 0 #ddd;
   background: rgba(255, 255, 255, 0.75);
   border-radius: 0.25em;
+`;
+export const ColText = styled(Col)<{ right: boolean }>`
+  text-align: ${(props) => (props.right ? 'right' : 'left')}; ;
 `;

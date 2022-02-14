@@ -28,7 +28,7 @@ const StoryBlock = ({
     <Container style={style}>
       <Grid>
         <Row reverse={reverse}>
-          <Col lg={6} md={6}>
+          <Col lg={6} md={6} xs={12}>
             <ImageWrapper accentColor={accentColor} reverse={reverse}>
               <StoryImage src={imageUrl} alt={title} />
             </ImageWrapper>
