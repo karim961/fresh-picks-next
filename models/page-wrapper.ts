@@ -23,4 +23,5 @@ export interface PageWrapperData {
 export interface PageWrapperProps {
   children?: JSX.Element;
   pageWrapperData: PageWrapperData;
+  title: string;
 }

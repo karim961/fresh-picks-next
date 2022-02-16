@@ -27,7 +27,6 @@ const RepeatableHeroBanner = ({
     setActiveVideoUrl(vUrl);
     setIsVideoActive(isActive);
   };
-  console.log('here', hero_banner);
   let i = -1;
   return (
     <StyledRepeatableHeroBanner>

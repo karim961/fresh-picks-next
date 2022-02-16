@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { getMediaUrl, getSingleTypes } from '../api/cms';
 import type { PageStaticProps, StaticProps } from '../models/static-props';
 import PageWrapper from '../components/sections/page-wrapper';
@@ -9,15 +8,12 @@ import CategoriesBlock from '../components/sections/categories-block';
 import StoryBlock from '../components/sections/story-block';
 import theme from '../styles/theme';
 import GetInTouch from '../components/sections/get-in-touch';
+import FeaturedProducts from '../components/featured-products';
 
 export default function Page({ pageData, pageWrapper }: StaticProps) {
   return pageData || pageWrapper ? (
     <>
-      <Head>
-        <title>Home</title>
-      </Head>
-
-      <PageWrapper pageWrapperData={pageWrapper}>
+      <PageWrapper pageWrapperData={pageWrapper} title={'Home'}>
         {pageData && (
           <>
             <RepeatableHeroBanner
@@ -70,6 +66,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 accentColor={theme.colors.secondary}
               />
             )}
+            <FeaturedProducts title={'test'} Products={[]} />
             <GetInTouch />
           </>
         )}

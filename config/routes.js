@@ -1,8 +1,8 @@
 export default Object.freeze({
   INDEX: '/',
-  PRODUCTS: 'products/',
-  ABOUT: 'about/',
-  CONTACT: 'contact/',
+  PRODUCTS: '/products',
+  ABOUT: '/about',
+  CONTACT: '/contact',
   PRODUCTS_APPLES: 'products/apples',
   // PRODUCTS_EDUCATION: 'products/education',
   // PRODUCTS_FAMILY: 'products/family',

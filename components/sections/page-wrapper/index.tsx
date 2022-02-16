@@ -10,10 +10,12 @@ import Footer from '../footer';
 const PageWrapper = ({
   pageWrapperData,
   children,
+  title,
 }: PageWrapperProps): ReactElement<PageWrapperProps> => {
   return (
     <>
       <Head>
+        <title>{title}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -39,12 +41,6 @@ const PageWrapper = ({
       {
         <ThemeProvider theme={theme}>
           <Wrapper>
-            {/*{pageWrapperData.infoSection && (*/}
-            {/*  <InfoBanner*/}
-            {/*    leftContent={pageWrapperData.infoSection.leftContent}*/}
-            {/*    rightContent={pageWrapperData.infoSection.rightContent}*/}
-            {/*  />*/}
-            {/*)}*/}
             {pageWrapperData.header && (
               <Header
                 logo={pageWrapperData.header.logo}
