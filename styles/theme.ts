@@ -6,6 +6,7 @@ const theme = {
     //#DA261D
     primaryText: '#22181C',
     primary: '#137547',
+    primary70: 'rgba(19,117,71,0.7)',
     // secondary: '#99C24D',
     // secondary: '#ABE188',
     secondary: '#A8C256',

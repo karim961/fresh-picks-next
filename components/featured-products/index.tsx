@@ -1,7 +1,12 @@
-import { ReactElement } from 'react';
-import Slider from 'react-slick';
-import { SlideContainer, StyledFeaturedProductsContainer } from './styles';
-import { Grid } from 'react-styled-flexboxgrid';
+import React, { ReactElement } from 'react';
+import { FeaturedProductsBlockContainer } from './styles';
+import Carousel from '../common/carousel';
+
+import theme from '../../styles/theme';
+import { getEmPx } from '../../utils/sizes';
+import { Col, Grid, Row } from 'react-styled-flexboxgrid';
+import HeaderDescription from '../common/header-description';
+import ProductCard from '../product-card';
 
 interface FeaturedProductsProps {
   title: string;
@@ -14,62 +19,53 @@ const FeaturedProducts =
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
+      responsive: [
+        {
+          breakpoint: theme.flexboxgrid.breakpoints.lg * getEmPx(),
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: theme.flexboxgrid.breakpoints.md * getEmPx(),
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: theme.flexboxgrid.breakpoints.sm * getEmPx(),
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     };
+
     return (
-      <StyledFeaturedProductsContainer>
+      <FeaturedProductsBlockContainer>
         <Grid>
-          <Slider {...settings}>
-            <SlideContainer>
-              <div>
-                <h3>1</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>2</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>3</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>4</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>5</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>6</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>7</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>8</h3>
-              </div>
-            </SlideContainer>
-            <SlideContainer>
-              <div>
-                <h3>9</h3>
-              </div>
-            </SlideContainer>
-          </Slider>
+          <Row center={'xs'}>
+            <Col md={8} xs={12}>
+              <HeaderDescription
+                title={'Our Top Selection'}
+                description={'test test'}
+              />
+            </Col>
+          </Row>
+
+          <Carousel settings={settings}>
+            <ProductCard title={'Apple'} link={'/contact'} />
+            <ProductCard title={'Apple'} link={'/contact'} />
+            <ProductCard title={'Apple'} link={'/contact'} />
+            <ProductCard title={'Apple'} link={'/contact'} />
+            <ProductCard title={'Apple'} link={'/contact'} />
+            <ProductCard title={'Apple'} link={'/contact'} />
+          </Carousel>
         </Grid>
-      </StyledFeaturedProductsContainer>
+      </FeaturedProductsBlockContainer>
     );
   };
 

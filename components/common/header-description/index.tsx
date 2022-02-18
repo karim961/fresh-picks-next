@@ -7,8 +7,8 @@ import { ReactElement } from 'react';
 
 type HeaderDescriptionProps = {
   id?: number;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 };
 
 const HeaderDescription = ({

@@ -1,13 +1,14 @@
 import styled from 'styled-components';
-import { SectionContainer } from '../../styles/styles';
-import { StyledHeaderDescription } from '../common/header-description/styles';
+import { SectionContainer } from '../../../styles/styles';
+import { StyledHeaderDescription } from '../../common/header-description/styles';
 
-export const FeaturedProductsBlockContainer = styled(SectionContainer)`
+export const PartnersBlockContainer = styled(SectionContainer)`
+  padding: 30px 0 100px;
   background: ${(props) => props.theme.colors.white};
   & ${StyledHeaderDescription} {
     text-align: center;
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 30px;
     & h1 {
       margin-top: 21px;
       padding-bottom: 20px;
@@ -22,5 +23,15 @@ export const FeaturedProductsBlockContainer = styled(SectionContainer)`
       border-radius: 10px;
       background: ${(props) => props.theme.colors.accent};
     }
+  }
+`;
+
+export const PartnerImageWrapper = styled.div`
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    max-width: 100%;
   }
 `;

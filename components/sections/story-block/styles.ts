@@ -4,7 +4,7 @@ import { Col } from 'react-styled-flexboxgrid';
 import { SectionContainer } from '../../../styles/styles';
 
 export const Container = styled(SectionContainer)`
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.lightGrey};
   background-size: cover;
 `;
 export const ImageWrapper = styled.div<{

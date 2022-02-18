@@ -17,16 +17,6 @@ export type Section = {
   media: Array<any>;
 };
 
-export type Page = {
-  id?: number;
-  name: string;
-  Sections: Array<Section>;
-  link: string;
-  published_at: string;
-  created_at?: string;
-  updated_at?: string;
-};
-
 async function apiCall(
   link: string,
   config: { [key: string]: any },
@@ -41,15 +31,25 @@ async function apiCall(
     });
 }
 
-export async function getPages(): Promise<Array<Page>> {
-  const pagesUrl = URLS.PAGES_URL;
+export async function getProduct(slug: string = ''): Promise<any> {
+  const pagesUrl = `${URLS.PRODUCTS_URL}${slug}`;
   const headers = { accept: JSON };
-
   return apiCall(pagesUrl, { headers });
 }
 
-export async function getPage(link: string = ''): Promise<Page> {
-  const pageUrl = `${URLS.PAGE_URL}${link}`;
+export async function getNews(slug: string = ''): Promise<any> {
+  const pagesUrl = `${URLS.NEWS_URL}${slug}`;
+  const headers = { accept: JSON };
+  return apiCall(pagesUrl, { headers });
+}
+export async function getCategory(slug: string = ''): Promise<any> {
+  const pagesUrl = `${URLS.CATS_URL}${slug}`;
+  const headers = { accept: JSON };
+  return apiCall(pagesUrl, { headers });
+}
+
+export async function getPage(link: string = ''): Promise<any> {
+  const pageUrl = `${cmsBaseUrl}/${link}`;
   const headers = { accept: JSON };
 
   return apiCall(pageUrl, { headers });
@@ -57,7 +57,7 @@ export async function getPage(link: string = ''): Promise<Page> {
 
 export async function getSingleTypes(endpoint: string): Promise<any> {
   const url = `${cmsBaseUrl}/${endpoint}`;
-  const headers = { accept: 'application/json' };
+  const headers = { accept: JSON };
   // console.log(url);
   return apiCall(url, { headers });
 }

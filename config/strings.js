@@ -1,7 +1,8 @@
 const cmsBaseUrl = process.env.NEXT_PUBLIC_CMS_BASE_URL || '';
 const URLS = {
-  PAGES_URL: `${cmsBaseUrl}/pages`,
-  PAGE_URL: `${cmsBaseUrl}/pages?link=/`,
+  PRODUCTS_URL: `${cmsBaseUrl}/products?slug=`,
+  NEWS_URL: `${cmsBaseUrl}/news?slug=`,
+  CATS_URL: `${cmsBaseUrl}/categories?slug=`,
 };
 
 const HEADERS = {
@@ -10,6 +11,7 @@ const HEADERS = {
 
 const TEXT = {
   HOME: 'Home',
+  PRODUCTS: 'Products',
   ABOUT: 'About',
   CONTACT: 'Contact',
   SERVER_ERROR_CODE: '503',

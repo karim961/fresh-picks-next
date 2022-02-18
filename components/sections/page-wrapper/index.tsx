@@ -47,6 +47,7 @@ const PageWrapper = ({
                 phoneNumber={pageWrapperData.header.phoneNumber}
                 email={pageWrapperData.header.email}
                 address={pageWrapperData.header.address}
+                menu={pageWrapperData.header.menu}
               />
             )}
             {children}

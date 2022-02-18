@@ -11,8 +11,6 @@ export const Wrapper = styled.div`
 export const SectionContainer = styled.section`
   width: 100%;
   padding: 125px 0;
-  //padding-bottom: 100px;
-  //padding-top: 120px;
 `;
 
 export const Icon = styled.i`

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { SectionContainer } from '../../styles/styles';
-import { StyledHeaderDescription } from '../common/header-description/styles';
+import { StyledHeaderDescription } from '../../common/header-description/styles';
+import { SectionContainer } from '../../../styles/styles';
 
-export const FeaturedProductsBlockContainer = styled(SectionContainer)`
+export const ProductsBlockContainer = styled(SectionContainer)`
   background: ${(props) => props.theme.colors.white};
   & ${StyledHeaderDescription} {
     text-align: center;
@@ -11,6 +11,7 @@ export const FeaturedProductsBlockContainer = styled(SectionContainer)`
     & h1 {
       margin-top: 21px;
       padding-bottom: 20px;
+      color: ${(props) => props.theme.colors.white};
     }
     &:after {
       content: ' ';

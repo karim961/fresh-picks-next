@@ -3,7 +3,6 @@ export default Object.freeze({
   PRODUCTS: '/products',
   ABOUT: '/about',
   CONTACT: '/contact',
-  PRODUCTS_APPLES: 'products/apples',
   // PRODUCTS_EDUCATION: 'products/education',
   // PRODUCTS_FAMILY: 'products/family',
   // PRODUCTS_MEDICAL: 'products/medical',

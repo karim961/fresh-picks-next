@@ -23,21 +23,26 @@ export const ButtonText = styled.span`
   margin-left: 10px;
 `;
 
-export const ButtonBox = styled.a`
+export const ButtonBox = styled.a<{ alternative: boolean }>`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: ${(props) =>
+    props.alternative ? props.theme.colors.primary : props.theme.colors.snow};
   cursor: pointer;
   text-align: center;
   height: 40px;
   position: relative;
   border: none;
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) =>
+    !props.alternative ? props.theme.colors.primary : props.theme.colors.snow};
   border-radius: 30px;
   overflow: hidden;
 
+  &:hover {
+    color: ${(props) => props.theme.colors.snow};
+  }
   &:hover :before {
     width: 100%;
     left: 0;

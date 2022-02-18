@@ -31,7 +31,7 @@ const StoryBlock = ({
   return (
     <Container style={style}>
       <Grid>
-        <Row reverse={reverse}>
+        <Row>
           <Col lg={6} md={6} xs={12}>
             <ScrollAnimation
               animateIn={
@@ -39,6 +39,7 @@ const StoryBlock = ({
                   ? GetAnimation('fadeInRight')
                   : GetAnimation('fadeInLeft')
               }
+              animateOnce
             >
               <ImageWrapper accentColor={accentColor} reverse={reverse}>
                 <StoryImage src={imageUrl} alt={title} />
@@ -46,7 +47,11 @@ const StoryBlock = ({
             </ScrollAnimation>
           </Col>
           <TextCol lg={6} md={6} xs={12}>
-            <ScrollAnimation animateIn={GetAnimation('fadeIn')} delay={400}>
+            <ScrollAnimation
+              animateIn={GetAnimation('fadeIn')}
+              delay={400}
+              animateOnce
+            >
               <H2>{title}</H2>
               <H6>{subtitle}</H6>
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{text}</ReactMarkdown>

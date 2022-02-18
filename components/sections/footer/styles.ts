@@ -9,7 +9,6 @@ export const FooterContainer = styled(Grid)`
   min-height: 200px;
   padding: 52px 92px 64px;
   color: ${(props) => props.theme.colors.snow};
-
   @media ${device.mobile}, ${device.tablet} {
     height: auto;
     padding: 67px 33px 32px;

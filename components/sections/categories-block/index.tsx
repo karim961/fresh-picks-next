@@ -4,6 +4,7 @@ import { Col, Grid, Row } from 'react-styled-flexboxgrid';
 import HeaderDescription from '../../common/header-description';
 import CategoryCard from '../../common/category-card';
 import { getMediaUrl } from '../../../api/cms';
+import { getProductsLink } from '../../../utils/strings';
 
 interface CategoriesBlock {
   categories: Array<any>;
@@ -24,14 +25,14 @@ const CategoriesBlock = ({
             <HeaderDescription title={title} description={description} />
           </Col>
         </Row>
-        <Row>
+        <Row center={'xs'}>
           {categories &&
             categories?.map((cat) => (
-              <Col md={3} sm={6} xs={12} key={cat.id}>
+              <Col md={4} sm={6} xs={12} key={cat.id}>
                 <CategoryCard
                   title={cat.title}
                   description={cat.description}
-                  url={'#'}
+                  url={getProductsLink(cat.slug)}
                   alternativeText={cat.title}
                   mediaUrl={getMediaUrl(cat.image.url)}
                 />

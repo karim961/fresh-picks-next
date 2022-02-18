@@ -35,7 +35,7 @@ const CategoryCard = ({
         {title && <H4>{title}</H4>}
         {description && <Description>{description}</Description>}
       </section>
-      {url && <Button text={TEXT.READ_MORE} url={'#'} />}
+      {url && <Button text={TEXT.READ_MORE} url={url} />}
     </CardContainer>
   );
 };

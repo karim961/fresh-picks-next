@@ -8,4 +8,5 @@ export const SimpleBannerContainer = styled(Container)`
 
 export const PageName = styled(H3)`
   font-size: 5rem;
+  color: ${(props) => props.theme.colors.snow};
 `;

@@ -1,8 +1,11 @@
+import { DropDownProps } from './drop-down';
+
 export interface HeaderProps {
   logo: { [key: string]: any };
   address: string;
   email: string;
   phoneNumber: string;
+  menu: Array<DropDownProps>;
 }
 
 export interface FooterProps {
