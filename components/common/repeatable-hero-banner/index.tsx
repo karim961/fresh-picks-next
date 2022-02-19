@@ -36,6 +36,7 @@ const RepeatableHeroBanner = ({
         infinite
         naturalSlideHeight={100}
         naturalSlideWidth={100}
+        isPlaying
       >
         <Slider classNameAnimation="cssAnimation">
           {hero_banner.map((hb) => {
