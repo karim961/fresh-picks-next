@@ -44,6 +44,8 @@ export const BannerActionsContainer = styled.div`
 `;
 
 export const PlayCol = styled(Col)`
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

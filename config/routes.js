@@ -4,6 +4,7 @@ export default Object.freeze({
   ABOUT: '/about',
   CONTACT: '/contact',
   PRODUCT: '/product',
+  QUALITY: '/quality',
   // PRODUCTS_EDUCATION: 'products/education',
   // PRODUCTS_FAMILY: 'products/family',
   // PRODUCTS_MEDICAL: 'products/medical',

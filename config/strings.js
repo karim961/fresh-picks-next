@@ -14,6 +14,7 @@ const TEXT = {
   PRODUCTS: 'Products',
   ABOUT: 'About',
   CONTACT: 'Contact',
+  QUALITY: 'Quality Assurance',
   SERVER_ERROR_CODE: '503',
   SERVER_ERROR: "Looks like we're having some server issues.",
   ADDRESS_TITLE: 'Our Location',

@@ -13,5 +13,6 @@ export const MENU = [
     >[],
   },
   { label: 'About Us', url: ROUTES.ABOUT },
+  { label: 'Quality Assurance', url: ROUTES.QUALITY },
   { label: 'Contact Us', url: ROUTES.CONTACT },
 ];

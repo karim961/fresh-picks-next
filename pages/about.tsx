@@ -3,33 +3,24 @@ import type { PageStaticProps, StaticProps } from '../models/static-props';
 import PageWrapper from '../components/sections/page-wrapper';
 import { getPageWrapper } from '../lib/page-wrapper-handler';
 import ErrorPage from '../components/sections/error';
-import RepeatableHeroBanner from '../components/common/repeatable-hero-banner';
-import CategoriesBlock from '../components/sections/categories-block';
+
 import StoryBlock from '../components/sections/story-block';
 import theme from '../styles/theme';
-import FeaturedProducts from '../components/featured-products';
 import { TEXT } from '../config/strings';
-import PartnersBlock from '../components/sections/partners-block';
+import SimpleBanner from '../components/common/hero-banner/simple-banner';
 
 export default function Page({ pageData, pageWrapper }: StaticProps) {
   return pageData || pageWrapper ? (
     <>
-      <PageWrapper pageWrapperData={pageWrapper} title={TEXT.HOME}>
+      <PageWrapper pageWrapperData={pageWrapper} title={TEXT.ABOUT}>
         {pageData && (
           <>
-            {pageData.hero_banner_slider.hero_banner && (
-              <RepeatableHeroBanner
-                hero_banner={pageData.hero_banner_slider.hero_banner}
+            {pageData.hero_banner && (
+              <SimpleBanner
+                backgroundImageSrc={getMediaUrl(pageData.hero_banner.media.url)}
+                name={pageData.hero_banner?.content?.title}
               />
             )}
-            {pageData.featured_products && (
-              <FeaturedProducts
-                title={TEXT.TOP_SELECTIONS}
-                description={'lorem ipsum'}
-                products={pageData.featured_products}
-              />
-            )}
-
             {pageData.our_story && (
               <StoryBlock
                 style={
@@ -50,13 +41,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 accentColor={theme.colors.accent}
               />
             )}
-            {pageData.product_block && (
-              <CategoriesBlock
-                categories={pageData.product_block.categories}
-                title={pageData.product_block.title}
-                description={pageData.product_block.description}
-              />
-            )}
+
             {pageData.our_mission && (
               <StoryBlock
                 style={
@@ -77,10 +62,6 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 accentColor={theme.colors.secondary}
               />
             )}
-            {pageData.partners_block && (
-              <PartnersBlock partners={pageData.partners_block} />
-            )}
-            {/*<GetInTouch />*/}
           </>
         )}
       </PageWrapper>
@@ -91,7 +72,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
 }
 
 export async function getStaticProps(): Promise<PageStaticProps> {
-  const pageData = await getPage('home');
+  const pageData = await getPage('about');
   const pageWrapper = await getPageWrapper();
 
   return {

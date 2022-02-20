@@ -43,6 +43,11 @@ export const StyledButtonBack = styled(ButtonBack)`
     ${chevron};
     transform: rotate(-135deg);
   }
+
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
+    left: -25px;
+    background: ${(props) => props.theme.colors.white75};
+  }
 `;
 
 export const StyledButtonNext = styled(ButtonNext)`
@@ -55,14 +60,35 @@ export const StyledButtonNext = styled(ButtonNext)`
     left: -0.15em;
     transform: rotate(45deg);
   }
+
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
+    right: -25px;
+    background: ${(props) => props.theme.colors.white75};
+  }
 `;
 /* ************************* */
 
 export const StyledRepeatableHeroBanner = styled.div`
   position: relative;
+  overflow: hidden;
   &:hover ${StyledButtonBack}, &:hover ${StyledButtonNext} {
     opacity: 1;
     visibility: visible;
+  }
+
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
+    & h1 {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.sm}rem) {
+    & h1 {
+      font-size: 3rem;
+    }
+    & h3 {
+      font-size: 1.5rem;
+    }
   }
 `;
 

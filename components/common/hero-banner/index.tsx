@@ -24,13 +24,16 @@ const HeroBanner = ({
   <Container backgroundImageSrc={backgroundImageSrc}>
     <Grid>
       <Row>
-        <Col xs={12} lg={8}>
+        <Col xs={1} md={1} lg={false} />
+        <Col xs={10} md={7} lg={8}>
           <Title>{title}</Title>
           <Description>{description}</Description>
           {/*<BannerActionsContainer>*/}
           {/*  /!*{action && action.map((act) => switchComponent(RICH_DISPLAY, act))}*!/*/}
           {/*</BannerActionsContainer>*/}
         </Col>
+        <Col xs={1} md={false} lg={false} />
+
         <PlayCol xs={false} md={false} lg={4}>
           {videoUrl && (
             <PlayButton
