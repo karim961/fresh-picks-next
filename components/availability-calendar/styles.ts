@@ -1,7 +1,13 @@
 import styled, { css } from 'styled-components';
 import { SectionContainer } from '../../styles/styles';
 
-export const AvailabilitySectionContainer = styled(SectionContainer)``;
+export const AvailabilitySectionContainer = styled(SectionContainer)`
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
+    width: auto;
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+`;
 
 export const Month = styled.div<{ isEven: boolean }>`
   border-bottom: 3px solid ${(props) => props.theme.colors.primary};
@@ -75,4 +81,8 @@ export const Availability = styled.div<{
 export const CalendarGrid = styled.div`
   display: grid;
   grid-template-columns: 2fr repeat(12, 1fr);
+
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.sm}rem) {
+    font-size: 0.7rem;
+  }
 `;
