@@ -31,7 +31,7 @@ const StoryBlock = ({
   return (
     <Container style={style}>
       <Grid>
-        <Row>
+        <Row reverse={reverse}>
           <Col lg={6} md={6} xs={12}>
             <ScrollAnimation
               animateIn={
