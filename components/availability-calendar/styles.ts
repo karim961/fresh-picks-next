@@ -80,7 +80,7 @@ export const Availability = styled.div<{
 
 export const CalendarGrid = styled.div`
   display: grid;
-  grid-template-columns: 2fr repeat(12, 1fr);
+  grid-template-columns: auto repeat(12, 1fr);
 
   @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.sm}rem) {
     font-size: 0.7rem;
