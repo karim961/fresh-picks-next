@@ -28,7 +28,7 @@ const SingleProduct = ({
             animateOnce
             delay={600}
           >
-            {product.Images && (
+            {product.Image && (
               <ProductImageWrapper>
                 <img src={getMediaUrl(product.Image.url)} alt={product.title} />
               </ProductImageWrapper>

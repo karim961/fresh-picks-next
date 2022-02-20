@@ -46,7 +46,6 @@ export async function getStaticProps({
   params: { slug: string };
 }): Promise<PageStaticProps> {
   const productData = await getSingleProduct(params.slug);
-  console.log(productData);
 
   const pageWrapper = await getPageWrapper();
   return {

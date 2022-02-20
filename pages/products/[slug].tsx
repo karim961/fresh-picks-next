@@ -57,7 +57,6 @@ export async function getStaticProps({
   params: { slug: string };
 }): Promise<PageStaticProps> {
   const categoryData = await getCategory(params.slug);
-  console.log(categoryData);
 
   const pageWrapper = await getPageWrapper();
   return {
