@@ -28,9 +28,12 @@ const SingleProduct = ({
             animateOnce
             delay={600}
           >
-            <ProductImageWrapper>
-              <img src={getMediaUrl(product.Image.url)} alt={product.title} />
-            </ProductImageWrapper>
+            {product.Images && (
+              <ProductImageWrapper>
+                <img src={getMediaUrl(product.Image.url)} alt={product.title} />
+              </ProductImageWrapper>
+            )}
+
             <H1>{product.title}</H1>
           </ScrollAnimation>
         </TopSection>

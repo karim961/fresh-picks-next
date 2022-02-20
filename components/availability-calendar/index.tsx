@@ -15,8 +15,6 @@ interface AvailabilityCalendarProps {
 const AvailabilityCalendar = ({
   variations,
 }: AvailabilityCalendarProps): ReactElement<AvailabilityCalendarProps> => {
-  console.log(variations);
-
   const reOrderMonths = (months: {
     january: boolean;
     february: boolean;
