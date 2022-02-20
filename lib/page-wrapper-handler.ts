@@ -21,7 +21,7 @@ export async function getPageWrapper(): Promise<PageWrapperData> {
   // const infoSection = await getSingleTypes('info-banner');
   const header = await getSingleTypes('header');
   const footer = await getSingleTypes('footer');
-  const categories = await getSingleTypes('categories');
+  const categories = await getSingleTypes('categories?_sort=order');
 
   return {
     header: { ...header, menu: GenerateMenu(categories) },
