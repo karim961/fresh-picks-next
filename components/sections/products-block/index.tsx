@@ -3,6 +3,7 @@ import { ProductsBlockContainer } from './styles';
 import { Col, Grid, Row } from 'react-styled-flexboxgrid';
 
 import ProductCard from '../../product-card';
+import { getSingleProductLink } from '../../../utils/strings';
 
 interface ProductsBlockProps {
   products: Array<any>;
@@ -18,49 +19,10 @@ const ProductsBlock = ({
           {products &&
             products?.map((prod) => (
               <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
-              </Col>
-            ))}
-          {products &&
-            products?.map((prod) => (
-              <Col md={3} sm={6} xs={12} key={prod.id}>
-                <ProductCard title={'Apple'} link={'/contact'} />
+                <ProductCard
+                  title={'Apple'}
+                  link={getSingleProductLink(prod.slug)}
+                />
               </Col>
             ))}
         </Row>

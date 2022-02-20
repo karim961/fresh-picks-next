@@ -31,7 +31,7 @@ async function apiCall(
     });
 }
 
-export async function getProduct(slug: string = ''): Promise<any> {
+export async function getSingleProduct(slug: string = ''): Promise<any> {
   const pagesUrl = `${URLS.PRODUCTS_URL}${slug}`;
   const headers = { accept: JSON };
   return apiCall(pagesUrl, { headers });

@@ -17,6 +17,7 @@ const TEXT = {
   SERVER_ERROR_CODE: '503',
   SERVER_ERROR: "Looks like we're having some server issues.",
   ADDRESS_TITLE: 'Our Location',
+  TOP_SELECTIONS: 'Our Top Selections',
   EMAIL_TITLE: 'Email Address',
   PHONE_TITLE: 'Get In Touch',
   ADDRESS: 'Example, Address',
@@ -25,6 +26,34 @@ const TEXT = {
   START_CONVERSATION: 'Start the conversation',
   LETS_TALK_TEXT:
     'For your inquiries, comments or suggestions, please contact us',
+  MONTHS: [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ],
+  MONTHS_SHORT: [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ],
 };
 
 export { URLS, HEADERS, TEXT };

@@ -20,7 +20,11 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
             <RepeatableHeroBanner
               hero_banner={pageData.hero_banner_slider.hero_banner}
             />
-            <FeaturedProducts title={'test'} Products={[]} />
+            <FeaturedProducts
+              title={TEXT.TOP_SELECTIONS}
+              description={'lorem ipsum'}
+              products={pageData.featured_products}
+            />
 
             {pageData.our_story && (
               <StoryBlock

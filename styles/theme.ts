@@ -10,6 +10,7 @@ const theme = {
     // secondary: '#99C24D',
     // secondary: '#ABE188',
     secondary: '#A8C256',
+    secondary30: 'rgba(168,194,86,0.15)',
     white: '#fcfaf9',
     snow: '#fff',
     grey: '#CFCBCA',

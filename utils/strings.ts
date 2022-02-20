@@ -7,3 +7,7 @@ export const GetAnimation = (name: string): string => {
 export const getProductsLink = (slug: string): string => {
   return `${ROUTES.PRODUCTS}/${slug}`;
 };
+
+export const getSingleProductLink = (slug: string): string => {
+  return `${ROUTES.PRODUCT}/${slug}`;
+};
