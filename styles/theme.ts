@@ -44,7 +44,7 @@ const theme = {
     outerMargin: 1.5, // rem
     mediaQuery: 'only screen',
     container: {
-      sm: 48, // rem
+      sm: 47, // rem
       md: 63, // rem
       lg: 74, // rem
     },

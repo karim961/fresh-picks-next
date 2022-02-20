@@ -6,6 +6,7 @@ import { SectionContainer } from '../../../styles/styles';
 export const Container = styled(SectionContainer)`
   background-color: ${(props) => props.theme.colors.lightGrey};
   background-size: cover;
+  overflow: hidden;
 `;
 export const ImageWrapper = styled.div<{
   accentColor: string;
