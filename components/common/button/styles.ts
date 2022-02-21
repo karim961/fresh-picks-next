@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -23,7 +23,10 @@ export const ButtonText = styled.span`
   margin-left: 10px;
 `;
 
-export const ButtonBox = styled.a<{ alternative: boolean }>`
+export const ButtonBox = styled.a<{
+  alternative: boolean;
+  isDisabled: boolean;
+}>`
   flex: 1;
   display: flex;
   align-items: center;
@@ -61,4 +64,17 @@ export const ButtonBox = styled.a<{ alternative: boolean }>`
     border-radius: 30px;
     background: ${(props) => props.theme.colors.primary};
   }
+
+  ${(props) =>
+    props.isDisabled &&
+    css`
+      cursor: not-allowed;
+      opacity: 0.5;
+      color: ${(props) => props.theme.colors.primaryText} !important;
+      background: ${(props) => props.theme.colors.grey} !important;
+
+      &:before {
+        content: none;
+      }
+    `}
 `;

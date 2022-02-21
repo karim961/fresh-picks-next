@@ -1,6 +1,7 @@
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { send } from 'emailjs-com';
 
 import { yupSchema } from './config';
 import { Col, Grid, Row } from 'react-styled-flexboxgrid';
@@ -17,6 +18,8 @@ import DropdownSelect from '../../common/dropdown-select';
 interface ContactFormProps {}
 
 const ContactForm = ({}: ContactFormProps): ReactElement<ContactFormProps> => {
+  const [isSending, setIsSending] = useState(false);
+
   const {
     handleSubmit,
     register,
@@ -30,7 +33,32 @@ const ContactForm = ({}: ContactFormProps): ReactElement<ContactFormProps> => {
   const onSubmit = () => {
     handleSubmit(
       (data) => {
-        console.log(data);
+        if (!isSending) {
+          setIsSending(true);
+          send(
+            process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '',
+            process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '',
+            {
+              from_name: data.company_name,
+              from_email: data.email,
+              country: data.country,
+              phone: data.phone,
+              subject: data.subject,
+              reply_to: data.email,
+              message: data.message,
+            },
+            process.env.NEXT_PUBLIC_EMAIL_USER_ID || '',
+          )
+            .then((response) => {
+              console.log('SUCCESS!', response.status, response.text);
+              const timer = setTimeout(() => {
+                setIsSending(false);
+              }, 6000 * 5);
+            })
+            .catch((err) => {
+              console.log('FAILED...', err);
+            });
+        }
       },
       (errors) => {
         // eslint-disable-next-line no-console
@@ -91,7 +119,11 @@ const ContactForm = ({}: ContactFormProps): ReactElement<ContactFormProps> => {
               <ErrorMessage>{errors.message?.message}</ErrorMessage>
             </Col>
             <ButtonContainer xs={12}>
-              <Button text={TEXT.SEND_MESSAGE} handleClick={onSubmit} />
+              <Button
+                text={isSending ? TEXT.MESSAGE_SENT : TEXT.SEND_MESSAGE}
+                handleClick={onSubmit}
+                isDisabled={isSending}
+              />
             </ButtonContainer>
           </Row>
         </Grid>

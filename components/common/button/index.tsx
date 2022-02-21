@@ -7,6 +7,7 @@ type ButtonProps = {
   text: string;
   handleClick?: any;
   alternative?: boolean;
+  isDisabled?: boolean;
 };
 
 const Button = ({
@@ -14,17 +15,22 @@ const Button = ({
   handleClick,
   url,
   alternative = false,
+  isDisabled = false,
 }: ButtonProps): ReactElement<any> => {
   return (
     <ButtonContainer>
       {handleClick ? (
-        <ButtonBox onClick={handleClick} alternative={alternative}>
+        <ButtonBox
+          onClick={handleClick}
+          alternative={alternative}
+          isDisabled={isDisabled}
+        >
           <ButtonText>{text}</ButtonText>
         </ButtonBox>
       ) : (
         url && (
           <Link href={url} passHref>
-            <ButtonBox alternative={alternative}>
+            <ButtonBox alternative={alternative} isDisabled={isDisabled}>
               <ButtonText>{text}</ButtonText>
             </ButtonBox>
           </Link>

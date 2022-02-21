@@ -16,6 +16,7 @@ const TEXT = {
   CONTACT: 'Contact',
   QUALITY: 'Quality Assurance',
   SEND_MESSAGE: 'Send Message',
+  MESSAGE_SENT: 'Message sent!',
   SERVER_ERROR_CODE: '503',
   SERVER_ERROR: "Looks like we're having some server issues.",
   ADDRESS_TITLE: 'Our Location',
