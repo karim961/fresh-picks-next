@@ -12,6 +12,7 @@ import {
 } from './styles';
 import Button from '../../common/button';
 import { TEXT } from '../../../config/strings';
+import DropdownSelect from '../../common/dropdown-select';
 
 interface ContactFormProps {}
 
@@ -19,13 +20,24 @@ const ContactForm = ({}: ContactFormProps): ReactElement<ContactFormProps> => {
   const {
     handleSubmit,
     register,
+    control,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(yupSchema),
-    mode: 'all',
+    mode: 'onSubmit',
   });
 
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = () => {
+    handleSubmit(
+      (data) => {
+        console.log(data);
+      },
+      (errors) => {
+        // eslint-disable-next-line no-console
+        console.log(errors);
+      },
+    )();
+  };
 
   return (
     <FormSectionContainer>
@@ -41,11 +53,13 @@ const ContactForm = ({}: ContactFormProps): ReactElement<ContactFormProps> => {
               <ErrorMessage>{errors.company_name?.message}</ErrorMessage>
             </Col>
             <Col xs={12} md={6}>
-              <input
-                placeholder={'Country'}
-                type={'text'}
-                {...register('country')}
+              <DropdownSelect
+                label={'Country'}
+                name={'country'}
+                options={TEXT.COUNTRIES_ARRAY}
+                control={control}
               />
+
               <ErrorMessage>{errors.country?.message}</ErrorMessage>
             </Col>
             <Col xs={12} md={6}>
@@ -77,10 +91,7 @@ const ContactForm = ({}: ContactFormProps): ReactElement<ContactFormProps> => {
               <ErrorMessage>{errors.message?.message}</ErrorMessage>
             </Col>
             <ButtonContainer xs={12}>
-              <Button
-                text={TEXT.SEND_MESSAGE}
-                handleClick={handleSubmit(onSubmit)}
-              />
+              <Button text={TEXT.SEND_MESSAGE} handleClick={onSubmit} />
             </ButtonContainer>
           </Row>
         </Grid>

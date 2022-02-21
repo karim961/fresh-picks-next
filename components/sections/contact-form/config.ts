@@ -3,7 +3,6 @@ import * as yup from 'yup';
 export const yupSchema = yup.object().shape({
   company_name: yup.string().required('Company name is required'),
   country: yup.string().required('Country is required'),
-  name: yup.string().required('Name is required'),
   phone: yup
     .string()
     .required('Phone is required')
