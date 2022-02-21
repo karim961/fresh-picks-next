@@ -4,6 +4,8 @@ import { Col, Grid } from 'react-styled-flexboxgrid';
 import { device } from '../../../config/device';
 
 export const FooterContainer = styled(Grid)`
+  margin-top: auto;
+  width: 100%;
   background: ${(props) => props.theme.colors.primary};
   box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.35);
   min-height: 200px;
