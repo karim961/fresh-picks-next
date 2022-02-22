@@ -19,7 +19,7 @@ export const Container = styled.div<{ backgroundImageSrc: string }>`
   height: 78vh;
   color: ${(props) => props.theme.colors.secondary};
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url(${({ backgroundImageSrc }) => backgroundImageSrc});
 
   background-repeat: no-repeat;
