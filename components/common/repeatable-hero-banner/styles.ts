@@ -90,10 +90,31 @@ export const StyledRepeatableHeroBanner = styled.div`
       font-size: 1.5rem;
     }
   }
+
+  & .cssAnimation {
+    transition: opacity 1000ms ease-in-out 0s, visibility 1000ms ease 0s;
+    background: bisque;
+    transform: none !important;
+    width: 100% !important;
+    position: relative;
+  }
+
+  & .cssAnimation.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & .cssAnimation.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
 `;
 
 export const StyledSlide = styled(Slide)`
-  transition: opacity 500ms ease-in-out 0s, visibility 500ms ease 0s;
+  transition: opacity 1000ms ease-in-out 0s, visibility 1000ms ease 0s;
+  top: 0;
+  left: 0;
+  width: 100% !important;
 
   &.visible {
     opacity: 1;
@@ -103,5 +124,6 @@ export const StyledSlide = styled(Slide)`
   &.hidden {
     opacity: 0;
     visibility: hidden;
+    position: absolute;
   }
 `;
