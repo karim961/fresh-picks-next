@@ -41,7 +41,7 @@ const SingleProduct = ({
       <Grid>
         <Row>
           <Col xs={12}>
-            {product.variations && (
+            {product.variations && product.variations.length > 0 && (
               <AvailabilityCalendar variations={product.variations} />
             )}
           </Col>
