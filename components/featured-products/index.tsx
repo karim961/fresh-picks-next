@@ -8,6 +8,7 @@ import { Col, Grid, Row } from 'react-styled-flexboxgrid';
 import HeaderDescription from '../common/header-description';
 import ProductCard from '../product-card';
 import { getSingleProductLink } from '../../utils/strings';
+import { getMediaUrl } from '../../api/cms';
 
 interface FeaturedProductsProps {
   title: string;
@@ -65,6 +66,7 @@ const FeaturedProducts = ({
                 key={prod.id}
                 title={prod.title}
                 link={getSingleProductLink(prod.slug)}
+                imageUrl={getMediaUrl(prod.icon.url)}
               />
             ))}
         </Carousel>

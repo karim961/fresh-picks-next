@@ -32,7 +32,7 @@ export const ButtonContainer = styled.div`
   margin-right: auto;
 `;
 
-export const ProductContainer = styled.div`
+export const ProductContainer = styled.div<{ imageUrl: string }>`
   border-radius: 10px;
   height: 250px;
   max-width: 300px;
@@ -40,7 +40,7 @@ export const ProductContainer = styled.div`
   margin-left: auto;
   margin-bottom: 3rem;
   background-color: ${(props) => props.theme.colors.secondary};
-  background-image: url('https://www.collinsdictionary.com/images/full/apple_158989157.jpg');
+  background-image: url(${(props) => props.imageUrl});
   background-size: cover;
   background-position: center;
   position: relative;

@@ -4,6 +4,7 @@ import { Col, Grid, Row } from 'react-styled-flexboxgrid';
 
 import ProductCard from '../../product-card';
 import { getSingleProductLink } from '../../../utils/strings';
+import { getMediaUrl } from '../../../api/cms';
 
 interface ProductsBlockProps {
   products: Array<any>;
@@ -22,6 +23,7 @@ const ProductsBlock = ({
                 <ProductCard
                   title={prod.title}
                   link={getSingleProductLink(prod.slug)}
+                  imageUrl={getMediaUrl(prod.icon.url)}
                 />
               </Col>
             ))}
