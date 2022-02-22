@@ -20,7 +20,7 @@ const ProductsBlock = ({
             products?.map((prod) => (
               <Col md={3} sm={6} xs={12} key={prod.id}>
                 <ProductCard
-                  title={'Apple'}
+                  title={prod.title}
                   link={getSingleProductLink(prod.slug)}
                 />
               </Col>
