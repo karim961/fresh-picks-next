@@ -7,13 +7,16 @@ import {
   Origin,
 } from './styles';
 import { TEXT } from '../../config/strings';
+import { H3 } from '../../styles/text';
 
 interface AvailabilityCalendarProps {
   variations: any[];
+  title: string;
 }
 
 const AvailabilityCalendar = ({
   variations,
+  title,
 }: AvailabilityCalendarProps): ReactElement<AvailabilityCalendarProps> => {
   const reOrderMonths = (months: {
     january: boolean;
@@ -48,6 +51,8 @@ const AvailabilityCalendar = ({
   let isEnd = false;
   return (
     <AvailabilitySectionContainer>
+      <H3>{title}</H3>
+
       <CalendarGrid>
         <div />
         {TEXT.MONTHS_SHORT.map((month, index) => (

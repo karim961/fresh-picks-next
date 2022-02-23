@@ -11,6 +11,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 import AvailabilityCalendar from '../../availability-calendar';
 import { Col, Grid, Row } from 'react-styled-flexboxgrid';
+import { SectionContainer } from '../../../styles/styles';
 
 interface SingleProductProps {
   product: any;
@@ -41,9 +42,26 @@ const SingleProduct = ({
       <Grid>
         <Row>
           <Col xs={12}>
-            {product.variations && product.variations.length > 0 && (
-              <AvailabilityCalendar variations={product.variations} />
-            )}
+            <SectionContainer>
+              {product.variations &&
+                product.variations.length > 0 &&
+                product.variations.map(
+                  (variation: {
+                    title: string;
+                    variations_calendar: any[];
+                  }) => (
+                    <>
+                      {variation.variations_calendar &&
+                        variation.variations_calendar.length > 0 && (
+                          <AvailabilityCalendar
+                            variations={variation.variations_calendar}
+                            title={variation.title}
+                          />
+                        )}
+                    </>
+                  ),
+                )}
+            </SectionContainer>
           </Col>
         </Row>
       </Grid>

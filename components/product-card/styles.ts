@@ -1,23 +1,29 @@
 import styled from 'styled-components';
 
 export const Overlay = styled.div`
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
+
   position: absolute;
-  top: 0;
+  top: 80%;
+  bottom: -55px;
   left: 0;
   width: 100%;
-  height: 100%;
+  //padding-top: 5px;
+  //padding-bottom: 5px;
+  //height: 100%;
   display: flex;
   //padding-bottom: 30px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   transition: 0.3s;
-  opacity: 0;
   color: ${(props) => props.theme.colors.snow};
+  background-color: ${(props) => props.theme.colors.primary};
+
   &:hover {
-    opacity: 1;
     background-color: ${(props) => props.theme.colors.primary70};
+    top: 55%;
+    bottom: 00px;
   }
 
   & h3 {
@@ -27,9 +33,12 @@ export const Overlay = styled.div`
 
 export const ButtonContainer = styled.div`
   width: 80%;
-  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+
+  & > div {
+    margin-top: 5px;
+  }
 `;
 
 export const ProductContainer = styled.div<{ imageUrl: string }>`

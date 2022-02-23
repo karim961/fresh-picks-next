@@ -1,11 +1,19 @@
 import styled, { css } from 'styled-components';
-import { SectionContainer } from '../../styles/styles';
+import { H3 } from '../../styles/text';
 
-export const AvailabilitySectionContainer = styled(SectionContainer)`
+export const AvailabilitySectionContainer = styled.article`
+  width: 100%;
+  padding-top: 50px;
+
   @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
     width: auto;
     margin-right: -1rem;
     margin-left: -1rem;
+  }
+
+  & ${H3} {
+    margin-bottom: 1rem;
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
