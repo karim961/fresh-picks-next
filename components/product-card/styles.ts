@@ -20,11 +20,11 @@ export const Overlay = styled.div`
   color: ${(props) => props.theme.colors.snow};
   background-color: ${(props) => props.theme.colors.primary};
 
-  &:hover {
-    background-color: ${(props) => props.theme.colors.primary70};
-    top: 55%;
-    bottom: 00px;
-  }
+  // &:hover {
+  //   background-color: ${(props) => props.theme.colors.primary70};
+  //   top: 55%;
+  //   bottom: 00px;
+  // }
 
   & h3 {
     color: ${(props) => props.theme.colors.snow};
@@ -57,5 +57,11 @@ export const ProductContainer = styled.div<{ imageUrl: string }>`
   overflow: hidden;
   &:hover {
     transform: scale(1.1);
+  }
+
+  &:hover ${Overlay} {
+    background-color: ${(props) => props.theme.colors.primary70};
+    top: 55%;
+    bottom: 00px;
   }
 `;
