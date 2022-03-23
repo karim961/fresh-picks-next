@@ -26,6 +26,7 @@ const TEXT = {
   ADDRESS: 'Example, Address',
   READ_MORE: 'Read more',
   LETS_TALK: "Let's Talk",
+  PACKAGING: 'PACKAGING',
   START_CONVERSATION: 'Start the conversation',
   LETS_TALK_TEXT:
     'For your inquiries, comments or suggestions, please contact us',

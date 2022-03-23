@@ -1,17 +1,22 @@
 import { ReactElement } from 'react';
 import {
+  DescriptionContainer,
+  PackagingRow,
   ProductImageWrapper,
   SingleProductContainer,
   TopSection,
 } from './styles';
 import { getMediaUrl } from '../../../api/cms';
-import { H1 } from '../../../styles/text';
+import { H1, H2 } from '../../../styles/text';
 import { GetAnimation } from '../../../utils/strings';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 import AvailabilityCalendar from '../../availability-calendar';
 import { Col, Grid, Row } from 'react-styled-flexboxgrid';
 import { SectionContainer } from '../../../styles/styles';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { TEXT } from '../../../config/strings';
 
 interface SingleProductProps {
   product: any;
@@ -40,13 +45,25 @@ const SingleProduct = ({
         </TopSection>
       </ScrollAnimation>
       <Grid>
-        <Row>
+        <Row center={'xs'}>
+          {product.description && (
+            <Col xs={12} sm={12} md={12} lg={10}>
+              <DescriptionContainer>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {product.description}
+                </ReactMarkdown>
+              </DescriptionContainer>
+            </Col>
+          )}
+
           <Col xs={12}>
             <SectionContainer>
               {product.variations &&
                 product.variations.length > 0 &&
                 product.variations.map(
                   (variation: {
+                    image: any;
+                    description: string;
                     title: string;
                     variations_calendar: any[];
                   }) => (
@@ -56,6 +73,8 @@ const SingleProduct = ({
                           <AvailabilityCalendar
                             variations={variation.variations_calendar}
                             title={variation.title}
+                            description={variation.description}
+                            image={variation.image.url}
                           />
                         )}
                     </>
@@ -64,6 +83,23 @@ const SingleProduct = ({
             </SectionContainer>
           </Col>
         </Row>
+        {product.packaging_image && product.packaging_description && (
+          <PackagingRow>
+            <H2>{TEXT.PACKAGING}</H2>
+
+            <Col xs={12} sm={12} md={6} lg={4}>
+              <img
+                src={getMediaUrl(product.packaging_image.url)}
+                alt={product.title}
+              />
+            </Col>
+            <Col xs={12} sm={12} md={6} lg={8}>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {product.packaging_description}
+              </ReactMarkdown>
+            </Col>
+          </PackagingRow>
+        )}
       </Grid>
     </SingleProductContainer>
   );

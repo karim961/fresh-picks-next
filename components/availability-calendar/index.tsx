@@ -3,20 +3,29 @@ import {
   Availability,
   AvailabilitySectionContainer,
   CalendarGrid,
+  ImageTitleCol,
   Month,
   Origin,
 } from './styles';
 import { TEXT } from '../../config/strings';
-import { H3 } from '../../styles/text';
+import { H2 } from '../../styles/text';
+import { Col, Row } from 'react-styled-flexboxgrid';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { getMediaUrl } from '../../api/cms';
 
 interface AvailabilityCalendarProps {
   variations: any[];
   title: string;
+  description: string;
+  image: string;
 }
 
 const AvailabilityCalendar = ({
   variations,
   title,
+  description,
+  image,
 }: AvailabilityCalendarProps): ReactElement<AvailabilityCalendarProps> => {
   const reOrderMonths = (months: {
     january: boolean;
@@ -51,7 +60,19 @@ const AvailabilityCalendar = ({
   let isEnd = false;
   return (
     <AvailabilitySectionContainer>
-      <H3>{title}</H3>
+      <Row center={'xs'}>
+        <ImageTitleCol xs={12}>
+          <img src={getMediaUrl(image)} alt={title} />
+          <H2>{title}</H2>
+        </ImageTitleCol>
+        {description && (
+          <Col xs={12} sm={12} md={12} lg={10}>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {description}
+            </ReactMarkdown>
+          </Col>
+        )}
+      </Row>
 
       <CalendarGrid>
         <div />

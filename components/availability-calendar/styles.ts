@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
-import { H3 } from '../../styles/text';
+import { H2 } from '../../styles/text';
+import { Col } from 'react-styled-flexboxgrid';
 
 export const AvailabilitySectionContainer = styled.article`
   width: 100%;
@@ -11,9 +12,15 @@ export const AvailabilitySectionContainer = styled.article`
     margin-left: -1rem;
   }
 
-  & ${H3} {
+  & ${H2} {
     margin-bottom: 1rem;
     color: ${(props) => props.theme.colors.primary};
+  }
+
+  & p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: ${(props) => props.theme.fontSizes.h5}rem;
   }
 `;
 
@@ -86,10 +93,22 @@ export const Availability = styled.div<{
   }
 `;
 
+export const ImageTitleCol = styled(Col)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & img {
+    max-width: 200px;
+    margin-bottom: 0.5rem;
+  }
+`;
+
 export const CalendarGrid = styled.div`
   display: grid;
   grid-template-columns: auto repeat(12, 1fr);
-
+  margin-top: 1.5rem;
   @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.sm}rem) {
     font-size: 0.7rem;
   }
