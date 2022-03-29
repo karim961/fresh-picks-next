@@ -74,7 +74,7 @@ const SingleProduct = ({
                             variations={variation.variations_calendar}
                             title={variation.title}
                             description={variation.description}
-                            image={variation.image.url}
+                            image={variation.image}
                           />
                         )}
                     </>

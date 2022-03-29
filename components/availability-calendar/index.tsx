@@ -18,7 +18,7 @@ interface AvailabilityCalendarProps {
   variations: any[];
   title: string;
   description: string;
-  image: string;
+  image: { [key: string]: string };
 }
 
 const AvailabilityCalendar = ({
@@ -61,10 +61,12 @@ const AvailabilityCalendar = ({
   return (
     <AvailabilitySectionContainer>
       <Row center={'xs'}>
-        <ImageTitleCol xs={12}>
-          <img src={getMediaUrl(image)} alt={title} />
-          <H2>{title}</H2>
-        </ImageTitleCol>
+        {image && (
+          <ImageTitleCol xs={12}>
+            <img src={getMediaUrl(image.url)} alt={title} />
+            <H2>{title}</H2>
+          </ImageTitleCol>
+        )}
         {description && (
           <Col xs={12} sm={12} md={12} lg={10}>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
