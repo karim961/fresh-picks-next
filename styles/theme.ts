@@ -11,7 +11,7 @@ const theme = {
     // secondary: '#ABE188',
     secondary: '#A8C256',
     secondary30: 'rgba(168,194,86,0.15)',
-    white: '#fcfaf9',
+    white: '#ffffff',
     snow: '#fff',
     grey: '#CFCBCA',
     lightGrey: '#f4f8ff',
