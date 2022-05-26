@@ -19,7 +19,7 @@ interface StoryBlock {
   reverse?: boolean;
   accentColor: string;
   style?: CSSProperties;
-  link: string;
+  link?: string;
 }
 
 const StoryBlock = ({
@@ -59,11 +59,13 @@ const StoryBlock = ({
               <H2>{title}</H2>
               <H6>{subtitle}</H6>
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{text}</ReactMarkdown>
-              <Row reverse>
-                <Col xs={6}>
-                  <Button text={TEXT.READ_MORE} url={link} />
-                </Col>
-              </Row>
+              {link && (
+                <Row reverse>
+                  <Col xs={6}>
+                    <Button text={TEXT.READ_MORE} url={link} />
+                  </Col>
+                </Row>
+              )}
             </ScrollAnimation>
           </TextCol>
         </Row>
