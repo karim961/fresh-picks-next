@@ -10,6 +10,7 @@ import theme from '../styles/theme';
 import FeaturedProducts from '../components/featured-products';
 import { TEXT } from '../config/strings';
 import PartnersBlock from '../components/sections/partners-block';
+import Routes from '../config/routes';
 
 export default function Page({ pageData, pageWrapper }: StaticProps) {
   return pageData || pageWrapper ? (
@@ -25,7 +26,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
             {pageData.featured_products && (
               <FeaturedProducts
                 title={TEXT.TOP_SELECTIONS}
-                description={'lorem ipsum'}
+                description={''}
                 products={pageData.featured_products}
               />
             )}
@@ -48,6 +49,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 subtitle={pageData.our_story?.header?.description}
                 text={pageData.our_story.text}
                 accentColor={theme.colors.accent}
+                link={Routes.QUALITY}
               />
             )}
             {pageData.product_block && (
@@ -75,6 +77,7 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 subtitle={pageData.our_mission?.header?.description}
                 text={pageData.our_mission.text}
                 accentColor={theme.colors.secondary}
+                link={Routes.ABOUT}
               />
             )}
             {pageData.partners_block && (
