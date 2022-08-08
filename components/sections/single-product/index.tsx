@@ -98,6 +98,23 @@ const SingleProduct = ({
                 {product.packaging_description}
               </ReactMarkdown>
             </Col>
+
+            {product.packaging_image2 && product.packaging_description2 && (
+              <>
+                <Col xs={12} sm={12} md={6} lg={4}>
+                  <img
+                    src={getMediaUrl(product.packaging_image2.url)}
+                    alt={product.title}
+                  />
+                </Col>
+
+                <Col xs={12} sm={12} md={6} lg={8}>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {product.packaging_description2}
+                  </ReactMarkdown>
+                </Col>
+              </>
+            )}
           </PackagingRow>
         )}
       </Grid>

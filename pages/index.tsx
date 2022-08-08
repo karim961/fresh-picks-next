@@ -11,6 +11,7 @@ import FeaturedProducts from '../components/featured-products';
 import { TEXT } from '../config/strings';
 import PartnersBlock from '../components/sections/partners-block';
 import Routes from '../config/routes';
+import SingleImage from '../components/common/single-image';
 
 export default function Page({ pageData, pageWrapper }: StaticProps) {
   return pageData || pageWrapper ? (
@@ -80,6 +81,9 @@ export default function Page({ pageData, pageWrapper }: StaticProps) {
                 link={Routes.ABOUT}
               />
             )}
+
+            {pageData.map && <SingleImage image={pageData?.map} />}
+
             {pageData.partners_block && (
               <PartnersBlock partners={pageData.partners_block} />
             )}

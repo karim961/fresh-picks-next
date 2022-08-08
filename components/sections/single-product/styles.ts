@@ -68,6 +68,7 @@ export const PackagingRow = styled(Row)`
   & ${Col} {
     display: flex;
     align-items: center;
+    padding-bottom: 1rem;
   }
 
   & img {
