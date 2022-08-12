@@ -9,4 +9,8 @@ export const SimpleBannerContainer = styled(Container)`
 export const PageName = styled(H3)`
   font-size: 5rem;
   color: ${(props) => props.theme.colors.snow};
+
+  @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
+    font-size: 3rem;
+  }
 `;
