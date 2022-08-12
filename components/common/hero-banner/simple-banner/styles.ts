@@ -12,5 +12,6 @@ export const PageName = styled(H3)`
 
   @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
     font-size: 3rem;
+    text-align: center;
   }
 `;
