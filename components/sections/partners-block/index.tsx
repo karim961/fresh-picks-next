@@ -18,26 +18,26 @@ const PartnersBlock = ({
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: partners.length < 5 ? partners.length : 5,
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
       {
         breakpoint: theme.flexboxgrid.breakpoints.lg * getEmPx(),
         settings: {
-          slidesToShow: 4,
+          slidesToShow: partners.length < 4 ? partners.length : 4,
         },
       },
       {
         breakpoint: theme.flexboxgrid.breakpoints.md * getEmPx(),
         settings: {
-          slidesToShow: 3,
+          slidesToShow: partners.length < 3 ? partners.length : 3,
         },
       },
       {
         breakpoint: theme.flexboxgrid.breakpoints.sm * getEmPx(),
         settings: {
-          slidesToShow: 2,
+          slidesToShow: partners.length < 2 ? partners.length : 2,
         },
       },
     ],
