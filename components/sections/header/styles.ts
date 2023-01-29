@@ -51,7 +51,7 @@ export const InfoContainer = styled.div`
   display: flex;
   padding: 5px 15px;
   align-items: center;
-
+  flex: calc(1 / 3);
   @media (max-width: ${(props) => props.theme.flexboxgrid.breakpoints.md}rem) {
     display: none;
   }
