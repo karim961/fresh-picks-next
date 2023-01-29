@@ -41,7 +41,8 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const ProductContainer = styled.div<{ imageUrl: string }>`
+export const ProductContainer = styled.a<{ imageUrl: string }>`
+  display: block;
   border-radius: 10px;
   height: 250px;
   max-width: 300px;

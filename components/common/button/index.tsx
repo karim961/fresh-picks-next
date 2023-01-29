@@ -27,14 +27,16 @@ const Button = ({
         >
           <ButtonText>{text}</ButtonText>
         </ButtonBox>
+      ) : url ? (
+        <Link href={url} passHref>
+          <ButtonBox alternative={alternative} isDisabled={isDisabled}>
+            <ButtonText>{text}</ButtonText>
+          </ButtonBox>
+        </Link>
       ) : (
-        url && (
-          <Link href={url} passHref>
-            <ButtonBox alternative={alternative} isDisabled={isDisabled}>
-              <ButtonText>{text}</ButtonText>
-            </ButtonBox>
-          </Link>
-        )
+        <ButtonBox alternative={alternative} isDisabled={isDisabled}>
+          <ButtonText>{text}</ButtonText>
+        </ButtonBox>
       )}
     </ButtonContainer>
   );
