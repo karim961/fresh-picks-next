@@ -28,7 +28,6 @@ const Header = ({
               </a>
             </Link>
           </Col>
-
           <RightCol lg={9} md={10} sm={8} xs={8}>
             <AddressContainer>
               <InfoBlock

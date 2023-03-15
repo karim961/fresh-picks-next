@@ -25,6 +25,7 @@
     "react-slick": "^0.28.1",
     "remark-gfm": "^3.0.1",
     "styled-components": "^5.3.3",
+    "xss": "^1.0.14",
     "yup": "^0.32.11"
   },
   "devDependencies": {

@@ -1,6 +1,7 @@
 import { ReactElement } from 'react';
 import { IconWrapper, InfoContainer, InfoDetails } from './styles';
 import { H5 } from '../../../styles/text';
+import xss from 'xss';
 
 interface InfoBlockProps {
   icon: string;
@@ -22,7 +23,11 @@ const InfoBlock = ({
       </IconWrapper>
       <InfoDetails>
         <H5>{title}</H5>
-        {url ? <a href={url}>{text}</a> : <p>{text}</p>}
+        {url ? (
+          <a href={url}>{text}</a>
+        ) : (
+          <p dangerouslySetInnerHTML={{ __html: xss(text) }} />
+        )}
       </InfoDetails>
     </InfoContainer>
   );
